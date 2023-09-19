@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 body {
   background-color: rgb(233, 221, 203);
   height: 100vh;
+  font-family: "Raleway", sans-serif;
 }
 
 #root {
@@ -11,41 +14,42 @@ body {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
   width: 37.5rem;
   max-width: 100%;
-  height: 25rem;
+  height: auto;
   max-height: 100%;
   background-color: aliceblue;
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
 }
 
 #text {
-  grid-column: span 4 / span 4;
-  margin: 0;
+  margin: 1.5rem 0;
   font-size: x-large;
   text-align: center;
   place-self: center;
+  font-weight: 500;
 }
 
 #author {
-  grid-column: span 4 / span 4;
   display: flex;
   justify-content: end;
   align-items: start;
-  margin: 0;
+  margin-bottom: 2.5rem;
+  font-weight: 200;
 }
 
-#new-quote {
-  grid-column: span 2 / span 2;
+.button-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#tweet-quote {
-  grid-column: span 2 / span 2;
-}
-
-* {
-  border: 1px solid red;
+.button {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: rgb(233, 221, 203);
+  color: rgb(102, 102, 97);
+  font-size: large;
 }
