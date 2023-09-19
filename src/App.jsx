@@ -40,7 +40,7 @@ function App() {
 
   return (
     <>
-      <div style={{ width: "100%" }}>
+      <div style={{ width: "100%", display: "grid", placeContent: "center" }}>
         <div id="quote-box" className="container">
           <p id="text">
             <ImQuotesLeft style={{ marginRight: "0.5rem" }} />

@@ -15,7 +15,7 @@ body {
 
 .container {
   width: 37.5rem;
-  max-width: 100%;
+  max-width: 80vw;
   height: auto;
   max-height: 100%;
   background-color: aliceblue;
@@ -47,9 +47,18 @@ body {
 }
 
 .button {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
   background-color: rgb(233, 221, 203);
   color: rgb(102, 102, 97);
-  font-size: large;
+  font-size: small;
+}
+@media (min-width: 600px) {
+  .button {
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    background-color: rgb(233, 221, 203);
+    color: rgb(102, 102, 97);
+    font-size: large;
+  }
 }
